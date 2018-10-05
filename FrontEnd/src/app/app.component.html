@@ -1,0 +1,77 @@
+<h2>BAD JOBS NOT HANDLING</h2>
+<div class="container">
+<div class="row">
+<div class="col-12">
+<form name="simpleForm">
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input name="email" type="email" class="form-control" [(ngModel)]="email"  id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input name="password" type="password" class="form-control" [(ngModel)]="password" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input name="address" type="text" class="form-control" id="inputAddress" [(ngModel)]="address" placeholder="1234 Main St">
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input name="city" type="text" class="form-control" placeholder="city" id="inputCity" [(ngModel)]="inputCity">
+    </div>
+   
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input name="zipcode" type="text" class="form-control" placeholder="zipcode" id="inputZip" [(ngModel)]="zipCode">
+    </div>
+  </div>
+ 
+  <button type="submit" class="btn btn-primary" (click)="submitForm()">Submit</button>
+</form>
+
+</div>
+</div>
+</div>
+<h2>BAD JOBS HANDLING SCENARIO</h2>
+
+<div class="container">
+  <div class="row">
+  <div class="col-12">
+  <form name="simpleForm">
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4">Email</label>
+        <input name="email" type="email" class="form-control" [(ngModel)]="emailH"  id="inputEmail4" placeholder="Email">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4">Password</label>
+        <input name="password" type="password" class="form-control" [(ngModel)]="passwordH" id="inputPassword4" placeholder="Password">
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputAddress">Address</label>
+      <input name="address" type="text" class="form-control" id="inputAddress" [(ngModel)]="addressH" placeholder="1234 Main St">
+    </div>
+  
+    <div class="form-row">
+      <div class="form-group col-md-6">
+        <label for="inputCity">City</label>
+        <input name="city" type="text" class="form-control" placeholder="city" id="inputCity" [(ngModel)]="inputCityH">
+      </div>
+     
+      <div class="form-group col-md-2">
+        <label for="inputZip">Zip</label>
+        <input name="zipcode" type="text" class="form-control" placeholder="zipcode" id="inputZip" [(ngModel)]="zipCodeH">
+      </div>
+    </div>
+   
+    <button type="submit" class="btn btn-primary" (click)="submitFormBadHandled()">Submit</button>
+  </form>
+  
+  </div>
+  </div>
+  </div>
